@@ -1,3 +1,5 @@
+// Use Perlin noise
+
 class MapGenerator {
   constructor(seed) {
     this.seed = seed;
@@ -58,8 +60,8 @@ class MapGenerator {
     return {
       mountain: {
         connections: {
-          '{"dx":0,"dy":-1}': ["mountain", "hill", "forest"],
-          '{"dx":1,"dy":0}': ["mountain", "hill", "forest"],
+          '{"dx":0,"dy":-1}': ["mountain", "hill", "forest"], // dưới
+          '{"dx":1,"dy":0}': ["mountain", "hill", "forest"], // bên phải
         },
       },
       hill: {
